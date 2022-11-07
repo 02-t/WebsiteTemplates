@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main-body {
+        @apply antialiased
+        bg-gradient-to-r
+        from-pink-300
+        via-purple-300
+        to-indigo-400
+        flex
+        flex-col
+        
+        overflow-y-hidden
+    }
+
+    .main-scroll {
+        @apply overflow-auto
+        scrollbar-thumb-gray-200
+        hover:scrollbar-thumb-gray-300
+        scrollbar-thumb-rounded
+        scrollbar-thin
+        flex-auto
+        flex-col
+    }
+
+    .main-nav {
+        @apply flex flex-wrap
+        select-none
+        items-center
+        justify-between
+        w-full
+        text-lg text-gray-700
+        bg-white
+        shadow-md
+        flex-none
+        md:flex-row
+        flex-col
+        relative
+    }
+
+    .nav-item {
+        @apply p-4 block
+        align-middle
+        hover:text-pink-400
+    }
+
+    .nav-item-img {
+        @apply h-6
+        float-left
+        group-hover:h-0
+    }
+
+    .nav-item-img-active {
+        @apply h-0
+        float-left
+        group-hover:h-6
+    }
+
+    .text-block {
+        @apply flex
+        bg-white
+        items-center
+        justify-center
+        mx-auto
+        w-11/12
+        md:max-w-screen-md
+        xl:max-w-screen-lg
+        rounded-lg
+        my-4
+        py-8
+        shadow-2xl
+    }
+
+    .pfp {
+        @apply
+        rounded-full
+        drop-shadow-lg
+        select-none
+        sm:max-h-48
+        sm:w-48
+        max-h-40
+        w-40
+        mx-auto
+    }
+
+    .card {
+        @apply w-80
+        rounded
+        overflow-hidden
+        shadow-lg
+        select-text
+    }
+
+    .cards-title {
+        @apply font-bold
+        text-xl
+        mb-2
+    }
+
+    .card-tags-div {
+        @apply px-6
+        pt-4
+        pb-2
+        select-none
+    }
+
+    .card-tag {
+        @apply inline-block 
+        bg-gray-200 
+        rounded-full 
+        px-3 py-1 
+        text-sm 
+        font-semibold
+        text-gray-700
+        mr-2 mb-2
+    }
+
+    h1 {
+        @apply font-extrabold
+        text-4xl
+        sm:text-5xl
+        md:text-6xl
+        text-center
+        py-4
+    }
+}
